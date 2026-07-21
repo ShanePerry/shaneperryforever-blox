@@ -111,7 +111,7 @@ sections:
             transform:translateX(-50%);
           ">
             <img 
-               src="media/about-shane-preview.JPG"
+               src="media/about-shane-preview.jpg"
                class="w-full rounded-md"
                >
           </div>
