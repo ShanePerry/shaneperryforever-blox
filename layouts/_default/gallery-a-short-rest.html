@@ -1,0 +1,66 @@
+{{ define "main" }}
+
+<main class="mx-auto max-w-screen-2xl px-6 py-12">
+
+  <header class="mb-10">
+    <h1 class="text-5xl font-bold tracking-tight text-gray-900 dark:text-white">
+      {{ .Title }}
+    </h1>
+
+    {{ with .Params.summary }}
+      <p class="mt-6 max-w-5xl text-xl leading-8 text-gray-700 dark:text-gray-300">
+        {{ . }}
+      </p>
+    {{ end }}
+  </header>
+
+  {{ $imgs := where .Resources "ResourceType" "image" }}
+  {{ $images := sort $imgs "Name" "desc" }}
+
+  {{ if gt (len $images) 0 }}
+
+    <div class="grid grid-cols-1 gap-x-6 gap-y-9 md:grid-cols-2 xl:grid-cols-4">
+
+      {{ range $img := $images }}
+
+        {{ $base := replaceRE "\\..+$" "" $img.Name }}
+        {{ $dateStr := "" }}
+        {{ if ge (len $base) 10 }}
+          {{ $dateStr = substr $base 0 10 }}
+        {{ end }}
+
+        {{ $caption := "" }}
+        {{ if findRE "^\\d{4}-\\d{2}-\\d{2}$" $dateStr }}
+          {{ $caption = dateFormat "January 2, 2006" (time $dateStr) }}
+        {{ end }}
+
+        <figure>
+          <a href="{{ $img.RelPermalink }}">
+            <div class="overflow-hidden rounded-md bg-gray-100 dark:bg-gray-800" style="aspect-ratio: 4 / 3;">
+              <img src="{{ $img.RelPermalink }}" alt="{{ $img.Name }}" loading="lazy" />
+            </div>
+          </a>
+
+          {{ if $caption }}
+            <figcaption class="mt-2 text-lg text-gray-500 dark:text-gray-400">
+              {{ $caption }}
+            </figcaption>
+          {{ end }}
+        </figure>
+
+      {{ end }}
+
+    </div>
+
+  {{ else }}
+
+    <p class="text-lg text-gray-700 dark:text-gray-300">
+      <em>No photos yet.</em> Add JPG/PNG images to
+      <code>content/about-shane/a-short-rest/</code>.
+    </p>
+
+  {{ end }}
+
+</main>
+
+{{ end }}

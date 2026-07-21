@@ -131,3 +131,42 @@ security:
   _merge: deep
 sitemap:
   _merge: deep
+
+menus:
+  main:
+    - name: Home
+      pageRef: /
+      weight: 10
+
+    - name: Memories
+      pageRef: /memories
+      weight: 20
+
+    - name: Eleven Weeks
+      pageRef: /eleven-weeks
+      weight: 30
+
+    - name: About Shane
+      pageRef: /about-shane
+      identifier: about
+      weight: 40
+
+    - name: Gallery
+      pageRef: /about-shane/gallery
+      parent: about
+      weight: 41
+
+    - name: Timeline
+      pageRef: /about-shane/timeline
+      parent: about
+      weight: 42
+
+    - name: Talks
+      pageRef: /about-shane/talks
+      parent: about
+      weight: 43
+
+    - name: A Short Rest
+      pageRef: /about-shane/a-short-rest
+      parent: about
+      weight: 44
