@@ -14,7 +14,7 @@ sections:
             transform:translateX(-50%);
           ">
             <img 
-               src="/media/hero-cropped.jpg"
+               src="media/hero-cropped.jpg"
                class="w-full rounded-md"
                >
           </div>
@@ -47,7 +47,7 @@ sections:
             transform:translateX(-50%);
           ">
             <img 
-               src="/media/memories-preview.jpg"
+               src="media/memories-preview.jpg"
                class="w-full rounded-md"
                >
           </div>
@@ -56,7 +56,7 @@ sections:
             Shared stories, photos, and videos celebrating Shane.
           </p>
 
-          <a href=/memories/>
+          <a href=memories/>
             Read Memories
           </a>
         </div>
@@ -79,7 +79,7 @@ sections:
             transform:translateX(-50%);
           ">
             <img 
-               src="/media/eleven-weeks-preview.jpeg"
+               src="media/eleven-weeks-preview.jpeg"
                class="w-full rounded-md"
                >
           </div>
@@ -88,7 +88,7 @@ sections:
             A 73-day walk through Shane’s accident, recovery, and final moments.
           </p>
 
-          <a href=/eleven-weeks/>
+          <a href=eleven-weeks/>
             Read Eleven Weeks
           </a>
         </div>
@@ -111,7 +111,7 @@ sections:
             transform:translateX(-50%);
           ">
             <img 
-               src="/media/about-shane-preview.JPG"
+               src="media/about-shane-preview.JPG"
                class="w-full rounded-md"
                >
           </div>
@@ -120,7 +120,7 @@ sections:
             Photos, timeline, talks, and the ongoing visits shared in A Short Rest.
           </p>
 
-          <a href=/about-shane/>
+          <a href=about-shane/>
             Explore About Shane
           </a>
         </div>
