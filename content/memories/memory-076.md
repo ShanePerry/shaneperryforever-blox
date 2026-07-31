@@ -13,7 +13,6 @@
 title = "Thanks For Your Hard Work"
 author = "Chivonne Carey"
 date = "2024-09-15"        # option to add date like this: (YYYY-MM-DD)
-tags = []        # option to add tags like this: tags = ["friends", "encouragement"]
 +++
 
 <!-- Type the memory below. Keep the original wording whenever possible. -->

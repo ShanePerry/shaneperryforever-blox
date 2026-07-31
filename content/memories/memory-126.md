@@ -13,7 +13,6 @@
 title = "So Much Love and Respect for Shane"
 author = "Marc and Eulah Carter"
 date = "2024-09-28"        # option to add date like this: (YYYY-MM-DD)
-tags = ["work"]        # option to add tags like this: tags = ["friends", "funny"]
 +++
 
 <!-- Type the memory below. Keep the original wording whenever possible. -->

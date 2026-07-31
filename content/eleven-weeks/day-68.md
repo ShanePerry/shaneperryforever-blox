@@ -7,7 +7,6 @@ summary = "Therapy sessions, heartfelt goodbyes, meaningful conversations, and r
 weight = 68
 url = "/eleven-weeks/day-68/"
 draft = false
-tags = ["Eleven Weeks", "Memories"]
 series = ["Eleven Weeks"]
 toc = false
 comments = true

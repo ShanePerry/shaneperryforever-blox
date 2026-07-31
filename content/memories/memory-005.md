@@ -13,7 +13,6 @@
 title = "Bow Tie Friday!"
 author = "Leslie and Levi Ballard"
 date = "2015-11-27"        # option to add date like this: (YYYY-MM-DD)
-tags = ["friends"]        # option to add tags like this: tags = ["friends", "funny"]
 +++
 
 <!-- Type the memory below. Keep the original wording whenever possible. -->

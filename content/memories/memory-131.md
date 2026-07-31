@@ -13,7 +13,6 @@
 title = "Turn the Faucets to the Left"
 author = "Chris Miller"
 date = "2024-11-25"        # option to add date like this: (YYYY-MM-DD)
-tags = ["work", "friends"]        # option to add tags like this: tags = ["friends", "funny"]
 +++
 
 <!-- Type the memory below. Keep the original wording whenever possible. -->

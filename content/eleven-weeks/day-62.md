@@ -8,7 +8,7 @@ summary = "A peaceful day with clear labs, fresh air in the garden, loving calls
 weight = 62 
 url = "/eleven-weeks/day-62/" 
 draft = false 
-tags = ["Eleven Weeks", "Memories"] 
+ 
 series = ["Eleven Weeks"] 
 toc = false 
 comments = true 

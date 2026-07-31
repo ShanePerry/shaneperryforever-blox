@@ -13,7 +13,6 @@
 title = "Taste of Perfection"
 author = "Sofia Ponce"
 date = "2026-01-10"        # option to add date like this: (YYYY-MM-DD)
-tags = ["family", "spiritual life"]        # option to add tags like this: tags = ["friends", "funny"]
 +++
 
 <!-- Type the memory below. Keep the original wording whenever possible. -->

@@ -13,7 +13,6 @@
 title = "Anniversary Photobomb"
 author = "Rob and Cherise Knoll"
 date = "2021-10-23"        # option to add date like this: (YYYY-MM-DD)
-tags = ["funny", "friends"]        # option to add tags like this: tags = ["friends", "funny"]
 +++
 
 <!-- Type the memory below. Keep the original wording whenever possible. -->

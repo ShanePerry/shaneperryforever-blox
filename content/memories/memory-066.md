@@ -13,7 +13,6 @@
 title = "Not Too Tall to Kneel"
 author = "Johnny Becerra"
 date = "2024-01-01"        # option to add date like this: (YYYY-MM-DD)
-tags = ["spiritual life"]        # option to add tags like this: tags = ["friends", "funny"]
 +++
 
 <!-- Type the memory below. Keep the original wording whenever possible. -->

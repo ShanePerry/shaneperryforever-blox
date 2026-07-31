@@ -13,7 +13,6 @@
 title = "Jalepeño Chips"
 author = "Chivonne"
 date = "2024-07-24"        # option to add date like this: (YYYY-MM-DD)
-tags = ["friends", "funny"]        # option to add tags like this: tags = ["friends", "funny"]
 +++
 
 <!-- Type the memory below. Keep the original wording whenever possible. -->

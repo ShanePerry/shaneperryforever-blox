@@ -7,7 +7,6 @@ summary = "Shane’s progress, therapies, discharge planning, kindnesses, and an
 weight = 71
 url = "/eleven-weeks/day-71/"
 draft = false
-tags = ["Eleven Weeks", "Memories"]
 series = ["Eleven Weeks"]
 toc = false
 comments = true

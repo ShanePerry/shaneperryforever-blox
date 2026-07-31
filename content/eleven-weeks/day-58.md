@@ -7,7 +7,6 @@ summary = "Surgical consult and steady improvement."
 weight = 58
 url = "/eleven-weeks/day-58/"
 draft = false
-tags = ["Eleven Weeks", "Memories"]
 series = ["Eleven Weeks"]
 toc = false
 comments = true

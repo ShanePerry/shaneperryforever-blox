@@ -13,7 +13,6 @@
 title = "A Laugh and Smile So Hard To Forget"
 author = "Maryalice"
 date = "2005-01-01"        # option to add date like this: (YYYY-MM-DD)
-tags = ["friends"]        # option to add tags like this: tags = ["friends", "funny"]
 +++
 
 <!-- Type the memory below. Keep the original wording whenever possible. -->

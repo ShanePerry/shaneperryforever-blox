@@ -7,7 +7,6 @@ summary = "Strong therapy performance and spiritual comfort."
 weight = 59
 url = "/eleven-weeks/day-59/"
 draft = false
-tags = ["Eleven Weeks", "Memories"]
 series = ["Eleven Weeks"]
 toc = false
 comments = true

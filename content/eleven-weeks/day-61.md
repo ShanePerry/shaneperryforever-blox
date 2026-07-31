@@ -8,7 +8,7 @@ summary = "Strong therapy day, good neurological updates, steady walking progres
 weight = 61 
 url = "/eleven-weeks/day-61/" 
 draft = false 
-tags = ["Eleven Weeks", "Memories"] 
+ 
 series = ["Eleven Weeks"] 
 toc = false 
 comments = true 

@@ -7,7 +7,6 @@ summary = "Daily update for June 29, 2024"
 weight = 13
 url = "/eleven-weeks/day-13/"
 draft = false
-tags = ["Eleven Weeks", "Memories"]
 series = ["Eleven Weeks"]
 toc = false
 comments = true

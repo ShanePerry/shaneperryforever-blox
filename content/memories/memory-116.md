@@ -13,7 +13,6 @@
 title = "Admirable Qualities at a Young Age"
 author = "Heather and Jason E."
 date = "2024-09-28"        # option to add date like this: (YYYY-MM-DD)
-tags = ["friends"]        # option to add tags like this: tags = ["friends", "funny"]
 +++
 
 <!-- Type the memory below. Keep the original wording whenever possible. -->

@@ -7,7 +7,6 @@ summary = "A full day of conversation, progress, worship, and grateful prayers a
 weight = 70
 url = "/eleven-weeks/day-70/"
 draft = false
-tags = ["Eleven Weeks", "Memories"]
 series = ["Eleven Weeks"]
 toc = false
 comments = true

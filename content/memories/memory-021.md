@@ -13,7 +13,6 @@
 title = "A Memory of Shane"
 author = "Bob and Ketra Ciranko"
 date = "2024-09-28"        # option to add date like this: (YYYY-MM-DD)
-tags = ["encouragement"]        # option to add tags like this: tags = ["friends", "funny"]
 +++
 
 <!-- Type the memory below. Keep the original wording whenever possible. -->

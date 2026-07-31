@@ -13,7 +13,6 @@
 title = "Solved Problems and Put People's Feelings First"
 author = "The Manzanares"
 date = "2018-01-01"        # option to add date like this: (YYYY-MM-DD)
-tags = ["encouragement"]        # option to add tags like this: tags = ["friends", "funny"]
 +++
 
 <!-- Type the memory below. Keep the original wording whenever possible. -->

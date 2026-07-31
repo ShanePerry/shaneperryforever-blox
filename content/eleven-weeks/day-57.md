@@ -7,7 +7,6 @@ summary = "Therapy progress, strength, and joy."
 weight = 57
 url = "/eleven-weeks/day-57/"
 draft = false
-tags = ["Eleven Weeks", "Memories"]
 series = ["Eleven Weeks"]
 toc = false
 comments = true

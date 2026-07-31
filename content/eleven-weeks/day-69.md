@@ -7,7 +7,6 @@ summary = "A quiet Saturday filled with rest, thoughtful conversations, a beauti
 weight = 69
 url = "/eleven-weeks/day-69/"
 draft = false
-tags = ["Eleven Weeks", "Memories"]
 series = ["Eleven Weeks"]
 toc = false
 comments = true

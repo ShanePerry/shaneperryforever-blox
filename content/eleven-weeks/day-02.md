@@ -7,7 +7,6 @@ summary = "Hemi-cranectomy, coma"
 weight = 2
 url = "/eleven-weeks/day-2/"
 draft = false
-tags = ["Eleven Weeks", "Memories"]
 series = ["Eleven Weeks"]
 toc = false
 comments = true

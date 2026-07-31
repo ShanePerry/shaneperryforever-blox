@@ -8,7 +8,7 @@ summary = "A day of therapy sessions, encouraging visits, spiritual conversation
 weight = 60 
 url = "/eleven-weeks/day-60/" 
 draft = false 
-tags = ["Eleven Weeks", "Memories"] 
+ 
 series = ["Eleven Weeks"] 
 toc = false 
 comments = true 

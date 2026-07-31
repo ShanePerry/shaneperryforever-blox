@@ -7,7 +7,6 @@ summary = "Accident, emergency rooms"
 weight = 1
 url = "/eleven-weeks/day-1/"
 draft = false
-tags = ["Eleven Weeks", "Memories"]
 series = ["Eleven Weeks"]
 toc = false
 comments = true

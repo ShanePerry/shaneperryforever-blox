@@ -8,7 +8,6 @@ summary = "Sedation reduced; ICP spikes; central line consent; swelling worsens;
 weight = 3
 url = "/eleven-weeks/day-03/"
 draft = false
-tags = ["Eleven Weeks", "Memories"]
 series = ["Eleven Weeks"]
 toc = false
 comments = true

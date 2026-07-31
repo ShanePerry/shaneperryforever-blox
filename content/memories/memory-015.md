@@ -13,7 +13,6 @@
 title = "Morning Coffee"
 author = "Christine C RN at Helen Hayes"
 date = "2024-07-28"        # option to add date like this: (YYYY-MM-DD)
-tags = ["encouragement"]        # option to add tags like this: tags = ["friends", "funny"]
 +++
 
 <!-- Type the memory below. Keep the original wording whenever possible. -->

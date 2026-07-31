@@ -4,7 +4,6 @@ slug = "day-22"
 weight = 22
 date = 2024-07-08T12:00:00-05:00
 draft = false
-tags = ["Eleven Weeks", "Memories"]
 series = ["Eleven Weeks"]
 toc = false
 comments = true

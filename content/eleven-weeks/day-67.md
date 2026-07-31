@@ -7,7 +7,6 @@ summary = "Day 67 update"
 weight = 67
 url = "/eleven-weeks/day-67/"
 draft = false
-tags = ["Eleven Weeks", "Memories"]
 series = ["Eleven Weeks"]
 toc = false
 comments = true

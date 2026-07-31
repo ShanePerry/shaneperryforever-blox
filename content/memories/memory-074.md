@@ -13,7 +13,6 @@
 title = "Light It Up"
 author = "Andrew Miska"
 date = "2015-01-01"        # option to add date like this: (YYYY-MM-DD)
-tags = []        # option to add tags like this: tags = ["family", "funny"]
 +++
 
 <!-- Type the memory below. Keep the original wording whenever possible. -->

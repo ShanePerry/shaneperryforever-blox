@@ -7,7 +7,6 @@ summary = "Daily updates, medical notes, and conversations from August 27."
 weight = 72
 url = "/eleven-weeks/day-72/"
 draft = false
-tags = ["Eleven Weeks", "Memories"]
 series = ["Eleven Weeks"]
 toc = false
 comments = true

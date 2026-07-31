@@ -13,7 +13,6 @@
 title = "He taught us so much"
 author = "Analisa Sandoval Colombia"
 date = "2015-01-07"        # option to add date like this: (YYYY-MM-DD)
-tags = ["work"]        # option to add tags like this: tags = ["friends", "funny"]
 +++
 
 <!-- Type the memory below. Keep the original wording whenever possible. -->

@@ -7,7 +7,6 @@ summary = "Final update: Shane's firm hope, faith and comfort. He saw the finish
 weight = 73
 url = "/eleven-weeks/day-73/"
 draft = false
-tags = ["Eleven Weeks", "Memories"]
 series = ["Eleven Weeks"]
 toc = false
 comments = true

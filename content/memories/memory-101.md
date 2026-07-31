@@ -13,7 +13,6 @@
 title = "A Legacy for Us All"
 author = "Rick Rittenbach"
 date = ""        # option to add date like this: (2024-09-28)
-tags = ["work"]        # option to add tags like this: tags = ["friends", "funny"]
 +++
 
 <!-- Type the memory below. Keep the original wording whenever possible. -->

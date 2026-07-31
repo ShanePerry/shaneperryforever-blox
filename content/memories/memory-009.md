@@ -13,7 +13,6 @@
 title = "Brilliant and Modest"
 author = "Bram Siegel"
 date = "2002-01-01"        # option to add date like this: (YYYY-MM-DD)
-tags = ["work"]        # option to add tags like this: tags = ["friends", "funny"]
 +++
 
 <!-- Type the memory below. Keep the original wording whenever possible. -->

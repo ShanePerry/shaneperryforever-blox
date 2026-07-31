@@ -7,7 +7,6 @@ summary = ""
 weight = 16
 url = "/eleven-weeks/day-16/"
 draft = false
-tags = ["Eleven Weeks", "Memories"]
 series = ["Eleven Weeks"]
 toc = false
 comments = true

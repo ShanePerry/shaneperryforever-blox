@@ -13,7 +13,6 @@
 title = "Prrrum"
 author = "Nessy"
 date = "2010-07-01"        # option to add date like this: (YYYY-MM-DD)
-tags = ["friends", "funny"]        # option to add tags like this: tags = ["friends", "funny"]
 +++
 
 <!-- Type the memory below. Keep the original wording whenever possible. -->

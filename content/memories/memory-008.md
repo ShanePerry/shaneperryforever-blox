@@ -13,7 +13,6 @@
 title = "Taco Tuesday on a Monday"
 author = "Rob and Sara Vega"
 date = "2021-07-26"        # option to add date like this: (YYYY-MM-DD)
-tags = ["friends"]        # option to add tags like this: tags = ["friends", "funny"]
 +++
 
 <!-- Type the memory below. Keep the original wording whenever possible. -->

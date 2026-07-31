@@ -13,7 +13,6 @@
 title = "Dirty Dishes in the Fridge"
 author = "Sandra Dowie"
 date = "2025-01-05"        # option to add date like this: (YYYY-MM-DD)
-tags = ["friends"]        # option to add tags like this: tags = ["friends", "funny"]
 +++
 
 <!-- Type the memory below. Keep the original wording whenever possible. -->
