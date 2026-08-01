@@ -25,3 +25,8 @@ Thumbs.db
 # Logs
 *.log
 npm-debug.log*
+
+content-backup-before-migration/
+content/eleven-weeks-backup-before-tags/
+content/memories-backup-before-tags/
+site-tree.txt
