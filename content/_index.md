@@ -57,7 +57,7 @@ sections:
             Shared stories, photos, and videos celebrating Shane.
           </p>
 
-          <a href=memories/>
+          <a href=memories/ class="no-underline transition hover:-translate-y-1 hover:shadow-lg">
             Read Memories
           </a>
         </div>
@@ -89,7 +89,7 @@ sections:
             A 73-day walk through Shane’s accident, recovery, and final moments.
           </p>
 
-          <a href=eleven-weeks/>
+          <a href=eleven-weeks/ class="no-underline transition hover:-translate-y-1 hover:shadow-lg>
             Read Eleven Weeks
           </a>
         </div>
@@ -121,7 +121,7 @@ sections:
             Photos, timeline, talks, and the ongoing visits shared in A Short Rest.
           </p>
 
-          <a href=about-shane/>
+          <a href=about-shane/ class="no-underline transition hover:-translate-y-1 hover:shadow-lg>
             Explore About Shane
           </a>
         </div>
