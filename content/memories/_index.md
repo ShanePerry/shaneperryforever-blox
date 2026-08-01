@@ -7,7 +7,7 @@ sections:
   - block: markdown
     content:
       text: |
-        <div class="not-prose" style="max-width:740px; margin:0 auto; padding:0 0.5rem;">
+        <div class="not-prose" style="max-width:740px; margin:0 auto; padding:0;">
           <h1 class="text-5xl font-bold text-gray-900 dark:text-white" style="margin-bottom:1.25rem;">
             Memories
           </h1>
