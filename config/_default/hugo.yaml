@@ -156,10 +156,10 @@ menus:
       parent: about
       weight: 41
 
-    - name: Timeline
-      pageRef: /about-shane/timeline
-      parent: about
-      weight: 42
+#    - name: Timeline
+#      pageRef: /about-shane/timeline
+#      parent: about
+#      weight: 42
 
     - name: Talks
       pageRef: /about-shane/talks

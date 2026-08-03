@@ -35,6 +35,7 @@ sections:
         </p>
         </a>
 
+        <!--
         <a href="timeline/" class="group block no-underline rounded-2xl border border-gray-200 bg-white/90 p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-lg dark:border-gray-700 dark:bg-zinc-900/90">
         <h2 class="text-xl font-bold text-gray-900 group-hover:text-primary-600 group-hover:underline dark:text-white dark:group-hover:text-primary-400" style="margin-bottom:0.75rem;">
         Timeline
@@ -43,6 +44,7 @@ sections:
         A walk through Shane’s life, including childhood, accomplishments, service, marriage, and the people and places that shaped Shane.
         </p>
         </a>
+        -->
 
         <a href="talks/" class="group block no-underline rounded-2xl border border-gray-200 bg-white/90 p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-lg dark:border-gray-700 dark:bg-zinc-900/90">
         <h2 class="text-xl font-bold text-gray-900 group-hover:text-primary-600 group-hover:underline dark:text-white dark:group-hover:text-primary-400" style="margin-bottom:0.75rem;">
