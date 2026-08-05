@@ -27,9 +27,10 @@ Key Point: "It's ok to wait, if you're waiting on Jehovah"
 
 ## The Resurrection: Victory Over Death • 3-17-24
 
-![Talk Photo](/talks/2024-03-17.jpg)
+<img src="/talks/2024-03-17.jpg" alt="Talk Photo" style="max-width:100%; height:auto; border-radius:8px;">
 
-[Download Talk Notes (PDF)](/talks/talk-notes.pdf)
+<a href="/talks/talk-notes.pdf"> Download Talk Notes (PDF)
+</a>
 
 Key Point: "The resurrection is not a dream. It's a reality. And this reality will change your life forever"
 

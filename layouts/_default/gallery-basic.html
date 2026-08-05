@@ -19,14 +19,14 @@
 
   {{ if gt (len $images) 0 }}
 
-    <div class="grid grid-cols-1 gap-x-6 gap-y-9 sm:grid-cols-2 xl:grid-cols-4">
+    <div class="grid grid-cols-1 gap-x-6 gap-y-9 sm:grid-cols-2 lg:grid-cols-3">
 
       {{ range $img := $images }}
 
         <figure>
-          <a href="{{ $img.RelPermalink }}" target="_blank" rel="noopener noreferrer">
+           <a href="#" class="gallery-item" data-image="{{ $img.RelPermalink }}">
             <div class="overflow-hidden rounded-md bg-gray-100 dark:bg-gray-800" style="aspect-ratio: 4 / 3;">
-              <img src="{{ $img.RelPermalink }}" alt="{{ $img.Name }}" class="h-full w-full object-cover">
+              <img src="{{ $img.RelPermalink }}" alt="{{ $img.Name }}" class="h-full w-full object-contain bg-black/5 dark:bg-black/20">
             </div>
           </a>
         </figure>
@@ -43,7 +43,139 @@
     </p>
 
   {{ end }}
+  <div
+  id="lightbox"
+  class="fixed inset-0 z-[9999] hidden items-center justify-center bg-black"
+>
 
+  <button
+    id="lightbox-close"
+    class="absolute top-6 right-8 text-white text-5xl opacity-70 hover:opacity-100 z-[60]"
+  >
+    ×
+  </button>
+
+  <button
+  id="lightbox-prev"
+  class="absolute left-4 md:left-8 text-white text-6xl opacity-40 hover:opacity-90"
+>
+  ‹
+</button>
+
+<img
+  id="lightbox-image"
+  src=""
+  alt=""
+  class="max-h-[90vh] max-w-[90vw] object-contain"
+/>
+
+<button
+  id="lightbox-next"
+  class="absolute right-4 md:right-8 text-white text-6xl opacity-40 hover:opacity-90"
+>
+  ›
+</button>
+
+</div>
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+
+  const items = [...document.querySelectorAll(".gallery-item")];
+  const lightbox = document.getElementById("lightbox");
+  const image = document.getElementById("lightbox-image");
+
+  const nextBtn = document.getElementById("lightbox-next");
+  const prevBtn = document.getElementById("lightbox-prev");
+  const closeBtn = document.getElementById("lightbox-close");
+
+  let currentIndex = 0;
+  let touchStartX = 0;
+  let touchEndX = 0;
+  
+  function openImage(index) {
+    currentIndex = index;
+    image.src = items[index].dataset.image;
+    lightbox.classList.remove("hidden");
+    lightbox.classList.add("flex");
+  }
+
+  function closeImage() {
+    lightbox.classList.add("hidden");
+    lightbox.classList.remove("flex");
+  }
+
+  function nextImage() {
+    currentIndex = (currentIndex + 1) % items.length;
+    image.src = items[currentIndex].dataset.image;
+  }
+
+  function prevImage() {
+    currentIndex =
+      (currentIndex - 1 + items.length) % items.length;
+    image.src = items[currentIndex].dataset.image;
+  }
+
+  items.forEach((item, index) => {
+    item.addEventListener("click", (e) => {
+      e.preventDefault();
+      openImage(index);
+    });
+  });
+
+  nextBtn.addEventListener("click", nextImage);
+  prevBtn.addEventListener("click", prevImage);
+  closeBtn.addEventListener("click", closeImage);
+
+  lightbox.addEventListener("click", (e) => {
+    if (e.target === lightbox) {
+      closeImage();
+    }
+  });
+
+document.addEventListener("keydown", (e) => {
+
+  if (lightbox.classList.contains("hidden")) {
+    return;
+  }
+
+  if (e.key === "ArrowRight") {
+    nextImage();
+  }
+
+  if (e.key === "ArrowLeft") {
+    prevImage();
+  }
+
+  if (e.key === "Escape") {
+    closeImage();
+  }
+
+});
+
+lightbox.addEventListener("touchstart", (e) => {
+  touchStartX = e.changedTouches[0].screenX;
+});
+
+lightbox.addEventListener("touchend", (e) => {
+
+  touchEndX = e.changedTouches[0].screenX;
+
+  const diff = touchEndX - touchStartX;
+
+  if (Math.abs(diff) < 50) {
+    return;
+  }
+
+  if (diff > 0) {
+    prevImage();
+  } else {
+    nextImage();
+  }
+
+});
+});
+</script>  
 </main>
 
 {{ end }}
