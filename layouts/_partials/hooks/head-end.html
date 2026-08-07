@@ -1,1 +1,26 @@
 <link rel="icon" type="image/png" href='{{ "favicon-32x32.png" | relURL }}'>
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  document.querySelectorAll(".nav-chevron").forEach((chevron) => {
+
+    chevron.addEventListener("click", (e) => {
+
+      if (window.innerWidth >= 1024) {
+        return;
+      }
+
+      e.preventDefault();
+      e.stopPropagation();
+
+      const parent = chevron.closest(".nav-dropdown");
+
+      if (parent) {
+        parent.classList.toggle("active");
+      }
+
+    });
+
+  });
+});
+</script>
