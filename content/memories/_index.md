@@ -16,9 +16,18 @@ sections:
             Welcome to <em>Memories</em> — a collection of stories from friends and family.
           </p>
 
-          <p class="text-lg text-gray-600 dark:text-gray-400" style="line-height:1.75; margin-bottom:0;">
-            Submissions may be lightly edited for clarity and formatting before publishing.
+          <p class="text-lg text-gray-600 dark:text-gray-400" style="line-height:1.75; margin-bottom:1rem;">
+            If you have a story, message, or memory of Shane, we would be grateful to receive it.
           </p>
+
+          <p class="text-lg text-gray-600 dark:text-gray-400" style="line-height:1.75; margin-bottom:1.5rem;">
+            Please use the link to the Google Form below. Submissions may be lightly edited for clarity and formatting before publishing.
+          </p>
+
+          <a
+            href="https://forms.gle/PAP7FBDvnss3ABRC6" class="no-underline transition hover:-translate-y-1 hover:shadow-lg">
+            Share a Memory of Shane
+          </a>
         </div>
 
         <style>

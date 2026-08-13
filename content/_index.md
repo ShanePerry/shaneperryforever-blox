@@ -19,7 +19,7 @@ sections:
                >
           </div>
 
-          <h1 class="text-4xl font-bold text-gray-900 dark:text-white" style="margin-top:1.75rem; margin-bottom:0;">
+          <h1 class="text-4xl font-bold text-gray-900 dark:text-white" style="margin-top:2.5rem; margin-bottom:0;">
             Shane Perry
           </h1>
 
@@ -30,7 +30,7 @@ sections:
 
     design:
       spacing:
-        padding: ['2rem', '0', '4rem', '0']
+        padding: ['3rem', '0', '3.5rem', '0']
 
 
   - block: markdown
@@ -49,7 +49,7 @@ sections:
                class="w-full rounded-md"
                >
           </div>
-          <h2 class="text-3xl font-bold text-gray-900 dark:text-white" style="margin-top:1.75rem; margin-bottom:0.5rem;">
+          <h2 class="text-3xl font-bold text-gray-900 dark:text-white" style="margin-top:2.5rem; margin-bottom:0.5rem;">
             Memories
           </h2>
 
@@ -64,7 +64,7 @@ sections:
 
     design:
       spacing:
-        padding: ['4rem', '0', '4rem', '0']
+        padding: ['4rem', '0', '3.5rem', '0']
 
   - block: markdown
     content:
@@ -81,7 +81,7 @@ sections:
                class="w-full rounded-md"
                >
           </div>
-          <h2 class="text-3xl font-bold text-gray-900 dark:text-white" style="margin-top:1.75rem; margin-bottom:0.5rem;">
+          <h2 class="text-3xl font-bold text-gray-900 dark:text-white" style="margin-top:2.5rem; margin-bottom:0.5rem;">
             Eleven Weeks
           </h2>
 
@@ -96,7 +96,7 @@ sections:
 
     design:
       spacing:
-        padding: ['4rem', '0', '4rem', '0']
+        padding: ['4rem', '0', '3.5rem', '0']
 
   - block: markdown
     content:
@@ -113,7 +113,7 @@ sections:
                class="w-full rounded-md"
                >
           </div>
-          <h2 class="text-3xl font-bold text-gray-900 dark:text-white" style="margin-top:1.75rem; margin-bottom:0.5rem;">
+          <h2 class="text-3xl font-bold text-gray-900 dark:text-white" style="margin-top:2.5rem; margin-bottom:0.5rem;">
             About Shane
           </h2>
 
@@ -128,5 +128,5 @@ sections:
 
     design:
       spacing:
-        padding: ['4rem', '0', '5rem', '0']
+        padding: ['4rem', '0', '4rem', '0']
 ---
