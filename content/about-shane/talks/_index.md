@@ -29,7 +29,7 @@ Key Point: "It's ok to wait, if you're waiting on Jehovah"
 
 <img src="2024-03-17.jpg" alt="Talk Photo" style="max-width:100%; height:auto; border-radius:8px;">
 
-<a href="/talks/talk-notes.pdf"> Download Talk Notes (PDF)
+<a href="talk-notes.pdf"> Download Talk Notes (PDF)
 </a>
 
 Key Point: "The resurrection is not a dream. It's a reality. And this reality will change your life forever"
