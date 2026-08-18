@@ -7,12 +7,12 @@ sections:
   - block: markdown
     content:
       text: |
-        <div class="not-prose mx-auto max-w-6xl px-6 py-6">
-          <h1 class="text-5xl font-bold tracking-tight text-gray-900 dark:text-white">
+        <div class="not-prose" style="max-width:740px; margin:0 auto; padding:0;">
+          <h1 class="text-5xl font-bold tracking-tight text-gray-900 dark:text-white" style="margin-bottom:1.25rem;">
             Gallery
           </h1>
 
-          <p class="mt-6 max-w-4xl text-lg leading-8 text-gray-700 dark:text-gray-300">
+          <p class="text-lg text-gray-600 dark:text-gray-400" style="line-height:1.75; margin-bottom:2.5rem;">
             Photos from Shane’s life, service, family, friendships, and everyday moments.
           </p>
 
@@ -87,10 +87,14 @@ sections:
                 Eleven Weeks
               </h2>
               <p class="mt-3 text-gray-600 dark:text-gray-400">
-                Photos of Shane's recovery and an incredible support systen.
+                Photos of Shane's recovery and an incredible support system.
               </p>
             </a>
 
           </div>
         </div>
+
+    design:
+      spacing:
+        padding: ['3rem', '0', '1.5rem', '0']
 ---

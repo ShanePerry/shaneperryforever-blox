@@ -24,9 +24,14 @@
       {{ range $img := $images }}
 
         <figure>
-           <a href="#" class="gallery-item" data-image="{{ $img.RelPermalink }}">
+          <a href="#" class="gallery-item" data-image="{{ $img.RelPermalink }}">
             <div class="overflow-hidden rounded-md bg-gray-100 dark:bg-gray-800" style="aspect-ratio: 4 / 3;">
-              <img src="{{ $img.RelPermalink }}" alt="{{ $img.Name }}" class="h-full w-full object-contain bg-black/5 dark:bg-black/20">
+              <img
+                src="{{ $img.RelPermalink }}"
+                alt="{{ $img.Name }}"
+                loading="lazy"
+                decoding="async"
+                class="h-full w-full object-contain bg-black/5 dark:bg-black/20">
             </div>
           </a>
         </figure>
@@ -38,144 +43,211 @@
   {{ else }}
 
     <p class="text-lg text-gray-700 dark:text-gray-300">
-      <em>No photos yet.</em> Add JPG/PNG images to
-      <code>content/about-shane/gallery/</code>.
+      <em>No photos yet.</em> Add JPG/PNG images to this gallery folder.
     </p>
 
   {{ end }}
+
+  {{ $gallerySections := slice
+    (dict "title" "Family" "url" "/about-shane/gallery/family/")
+    (dict "title" "Friends" "url" "/about-shane/gallery/friends/")
+    (dict "title" "Bethel Service" "url" "/about-shane/gallery/bethel-service/")
+    (dict "title" "Spiritual Activities" "url" "/about-shane/gallery/spiritual-activities/")
+    (dict "title" "Outdoors" "url" "/about-shane/gallery/outdoors/")
+    (dict "title" "Early Years" "url" "/about-shane/gallery/early-years/")
+    (dict "title" "Great Husband" "url" "/about-shane/gallery/great-husband/")
+    (dict "title" "Eleven Weeks" "url" "/about-shane/gallery/eleven-weeks/")
+  }}
+
+  {{ $currentIndex := -1 }}
+
+  {{ range $i, $section := $gallerySections }}
+    {{ if eq ((index $section "url") | relLangURL) $.RelPermalink }}
+      {{ $currentIndex = $i }}
+    {{ end }}
+  {{ end }}
+
+  {{ if ge $currentIndex 0 }}
+    <nav class="mt-14 border-t border-gray-200 pt-8 dark:border-gray-700">
+      <div class="flex items-center justify-between gap-4">
+
+        <div class="w-1/2 text-left">
+          {{ if gt $currentIndex 0 }}
+            {{ $prev := index $gallerySections (sub $currentIndex 1) }}
+            <a
+              href="{{ (index $prev "url") | relLangURL }}"
+              class="inline-block rounded-lg border border-gray-200 bg-white/90 px-5 py-3 text-base font-semibold text-gray-800 no-underline shadow-sm transition hover:-translate-x-1 hover:shadow-md dark:border-gray-700 dark:bg-zinc-900/90 dark:text-gray-100">
+              ← Previous: {{ index $prev "title" }}
+            </a>
+          {{ end }}
+        </div>
+
+        <div class="w-1/2 text-right">
+          {{ if lt $currentIndex (sub (len $gallerySections) 1) }}
+            {{ $next := index $gallerySections (add $currentIndex 1) }}
+            <a
+              href="{{ (index $next "url") | relLangURL }}"
+              class="inline-block rounded-lg border border-gray-200 bg-white/90 px-5 py-3 text-base font-semibold text-gray-800 no-underline shadow-sm transition hover:translate-x-1 hover:shadow-md dark:border-gray-700 dark:bg-zinc-900/90 dark:text-gray-100">
+              Next: {{ index $next "title" }} →
+            </a>
+          {{ end }}
+        </div>
+
+      </div>
+    </nav>
+  {{ end }}
+
   <div
-  id="lightbox"
-  class="fixed inset-0 z-[9999] hidden items-center justify-center bg-black"
->
+    id="lightbox"
+    class="fixed inset-0 z-[9999] hidden items-center justify-center bg-black">
 
-  <button
-    id="lightbox-close"
-    class="absolute top-6 right-8 text-white text-5xl opacity-70 hover:opacity-100 z-[60]"
-  >
-    ×
-  </button>
+    <button
+      id="lightbox-close"
+      class="absolute top-6 right-8 text-white text-5xl opacity-70 hover:opacity-100 z-[60]">
+      ×
+    </button>
 
-  <button
-  id="lightbox-prev"
-  class="absolute left-4 md:left-8 text-white text-6xl opacity-40 hover:opacity-90"
->
-  ‹
-</button>
+    <button
+      id="lightbox-prev"
+      class="absolute left-4 md:left-8 text-white text-6xl opacity-40 hover:opacity-90">
+      ‹
+    </button>
 
-<img
-  id="lightbox-image"
-  src=""
-  alt=""
-  class="max-h-[90vh] max-w-[90vw] object-contain"
-/>
+    <img
+      id="lightbox-image"
+      src=""
+      alt=""
+      class="max-h-[90vh] max-w-[90vw] object-contain" />
 
-<button
-  id="lightbox-next"
-  class="absolute right-4 md:right-8 text-white text-6xl opacity-40 hover:opacity-90"
->
-  ›
-</button>
+    <button
+      id="lightbox-next"
+      class="absolute right-4 md:right-8 text-white text-6xl opacity-40 hover:opacity-90">
+      ›
+    </button>
 
-</div>
+  </div>
 
-<script>
-document.addEventListener("DOMContentLoaded", () => {
+  <script>
+  document.addEventListener("DOMContentLoaded", () => {
 
-  const items = [...document.querySelectorAll(".gallery-item")];
-  const lightbox = document.getElementById("lightbox");
-  const image = document.getElementById("lightbox-image");
+    const items = [...document.querySelectorAll(".gallery-item")];
+    const lightbox = document.getElementById("lightbox");
+    const image = document.getElementById("lightbox-image");
 
-  const nextBtn = document.getElementById("lightbox-next");
-  const prevBtn = document.getElementById("lightbox-prev");
-  const closeBtn = document.getElementById("lightbox-close");
+    const nextBtn = document.getElementById("lightbox-next");
+    const prevBtn = document.getElementById("lightbox-prev");
+    const closeBtn = document.getElementById("lightbox-close");
 
-  let currentIndex = 0;
-  let touchStartX = 0;
-  let touchEndX = 0;
-  
-  function openImage(index) {
-    currentIndex = index;
-    image.src = items[index].dataset.image;
-    lightbox.classList.remove("hidden");
-    lightbox.classList.add("flex");
-  }
+    let currentIndex = 0;
+    let touchStartX = 0;
+    let touchEndX = 0;
 
-  function closeImage() {
-    lightbox.classList.add("hidden");
-    lightbox.classList.remove("flex");
-  }
+    function openImage(index) {
+      if (!items.length) {
+        return;
+      }
 
-  function nextImage() {
-    currentIndex = (currentIndex + 1) % items.length;
-    image.src = items[currentIndex].dataset.image;
-  }
-
-  function prevImage() {
-    currentIndex =
-      (currentIndex - 1 + items.length) % items.length;
-    image.src = items[currentIndex].dataset.image;
-  }
-
-  items.forEach((item, index) => {
-    item.addEventListener("click", (e) => {
-      e.preventDefault();
-      openImage(index);
-    });
-  });
-
-  nextBtn.addEventListener("click", nextImage);
-  prevBtn.addEventListener("click", prevImage);
-  closeBtn.addEventListener("click", closeImage);
-
-  lightbox.addEventListener("click", (e) => {
-    if (e.target === lightbox) {
-      closeImage();
+      currentIndex = index;
+      image.src = items[index].dataset.image;
+      lightbox.classList.remove("hidden");
+      lightbox.classList.add("flex");
     }
+
+    function closeImage() {
+      lightbox.classList.add("hidden");
+      lightbox.classList.remove("flex");
+    }
+
+    function nextImage() {
+      if (!items.length) {
+        return;
+      }
+
+      currentIndex = (currentIndex + 1) % items.length;
+      image.src = items[currentIndex].dataset.image;
+    }
+
+    function prevImage() {
+      if (!items.length) {
+        return;
+      }
+
+      currentIndex = (currentIndex - 1 + items.length) % items.length;
+      image.src = items[currentIndex].dataset.image;
+    }
+
+    items.forEach((item, index) => {
+      item.addEventListener("click", (e) => {
+        e.preventDefault();
+        openImage(index);
+      });
+    });
+
+    if (nextBtn) {
+      nextBtn.addEventListener("click", nextImage);
+    }
+
+    if (prevBtn) {
+      prevBtn.addEventListener("click", prevImage);
+    }
+
+    if (closeBtn) {
+      closeBtn.addEventListener("click", closeImage);
+    }
+
+    if (lightbox) {
+      lightbox.addEventListener("click", (e) => {
+        if (e.target === lightbox) {
+          closeImage();
+        }
+      });
+
+      lightbox.addEventListener("touchstart", (e) => {
+        touchStartX = e.changedTouches[0].screenX;
+      });
+
+      lightbox.addEventListener("touchend", (e) => {
+
+        touchEndX = e.changedTouches[0].screenX;
+
+        const diff = touchEndX - touchStartX;
+
+        if (Math.abs(diff) < 50) {
+          return;
+        }
+
+        if (diff > 0) {
+          prevImage();
+        } else {
+          nextImage();
+        }
+
+      });
+    }
+
+    document.addEventListener("keydown", (e) => {
+
+      if (!lightbox || lightbox.classList.contains("hidden")) {
+        return;
+      }
+
+      if (e.key === "ArrowRight") {
+        nextImage();
+      }
+
+      if (e.key === "ArrowLeft") {
+        prevImage();
+      }
+
+      if (e.key === "Escape") {
+        closeImage();
+      }
+
+    });
+
   });
+  </script>
 
-document.addEventListener("keydown", (e) => {
-
-  if (lightbox.classList.contains("hidden")) {
-    return;
-  }
-
-  if (e.key === "ArrowRight") {
-    nextImage();
-  }
-
-  if (e.key === "ArrowLeft") {
-    prevImage();
-  }
-
-  if (e.key === "Escape") {
-    closeImage();
-  }
-
-});
-
-lightbox.addEventListener("touchstart", (e) => {
-  touchStartX = e.changedTouches[0].screenX;
-});
-
-lightbox.addEventListener("touchend", (e) => {
-
-  touchEndX = e.changedTouches[0].screenX;
-
-  const diff = touchEndX - touchStartX;
-
-  if (Math.abs(diff) < 50) {
-    return;
-  }
-
-  if (diff > 0) {
-    prevImage();
-  } else {
-    nextImage();
-  }
-
-});
-});
-</script>  
 </main>
 
 {{ end }}
