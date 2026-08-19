@@ -76,7 +76,7 @@
           {{ if gt $currentIndex 0 }}
             {{ $prev := index $gallerySections (sub $currentIndex 1) }}
             <a
-              href="../{{ (index $prev "slug") | relLangURL }}"
+              href="{{ printf "about-shane/gallery/%s/" (index $prev "slug") | relURL }}"
               class="inline-block rounded-lg border border-gray-200 bg-white/90 px-5 py-3 text-base font-semibold text-gray-800 no-underline shadow-sm transition hover:-translate-x-1 hover:shadow-md dark:border-gray-700 dark:bg-zinc-900/90 dark:text-gray-100">
               ← Previous: {{ index $prev "title" }}
             </a>
@@ -87,7 +87,7 @@
           {{ if lt $currentIndex (sub (len $gallerySections) 1) }}
             {{ $next := index $gallerySections (add $currentIndex 1) }}
             <a
-              href="../{{ (index $next "slug") | relLangURL }}"
+              href="{{ printf "about-shane/gallery/%s/" (index $next "slug") | relURL }}"
               class="inline-block rounded-lg border border-gray-200 bg-white/90 px-5 py-3 text-base font-semibold text-gray-800 no-underline shadow-sm transition hover:translate-x-1 hover:shadow-md dark:border-gray-700 dark:bg-zinc-900/90 dark:text-gray-100">
               Next: {{ index $next "title" }} →
             </a>
