@@ -48,24 +48,25 @@
 
   {{ end }}
 
-  {{ $gallerySections := slice
-    (dict "title" "Family" "url" "/about-shane/gallery/family/")
-    (dict "title" "Friends" "url" "/about-shane/gallery/friends/")
-    (dict "title" "Bethel Service" "url" "/about-shane/gallery/bethel-service/")
-    (dict "title" "Spiritual Activities" "url" "/about-shane/gallery/spiritual-activities/")
-    (dict "title" "Outdoors" "url" "/about-shane/gallery/outdoors/")
-    (dict "title" "Early Years" "url" "/about-shane/gallery/early-years/")
-    (dict "title" "Great Husband" "url" "/about-shane/gallery/great-husband/")
-    (dict "title" "Eleven Weeks" "url" "/about-shane/gallery/eleven-weeks/")
-  }}
+{{ $gallerySections := slice
+  (dict "title" "Family" "slug" "family" "url" "/about-shane/gallery/family/")
+  (dict "title" "Friends" "slug" "friends" "url" "/about-shane/gallery/friends/")
+  (dict "title" "Bethel Service" "slug" "bethel-service" "url" "/about-shane/gallery/bethel-service/")
+  (dict "title" "Spiritual Activities" "slug" "spiritual-activities" "url" "/about-shane/gallery/spiritual-activities/")
+  (dict "title" "Outdoors" "slug" "outdoors" "url" "/about-shane/gallery/outdoors/")
+  (dict "title" "Early Years" "slug" "early-years" "url" "/about-shane/gallery/early-years/")
+  (dict "title" "Great Husband" "slug" "great-husband" "url" "/about-shane/gallery/great-husband/")
+  (dict "title" "Eleven Weeks" "slug" "eleven-weeks" "url" "/about-shane/gallery/eleven-weeks/")
+}}
 
-  {{ $currentIndex := -1 }}
+{{ $currentSlug := path.Base .File.Dir }}
+{{ $currentIndex := -1 }}
 
-  {{ range $i, $section := $gallerySections }}
-    {{ if eq ((index $section "url") | relLangURL) $.RelPermalink }}
-      {{ $currentIndex = $i }}
-    {{ end }}
+{{ range $i, $section := $gallerySections }}
+  {{ if eq (index $section "slug") $currentSlug }}
+    {{ $currentIndex = $i }}
   {{ end }}
+{{ end }}
 
   {{ if ge $currentIndex 0 }}
     <nav class="mt-14 border-t border-gray-200 pt-8 dark:border-gray-700">
