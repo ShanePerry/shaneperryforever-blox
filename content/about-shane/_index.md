@@ -47,7 +47,7 @@ sections:
         -->
 
         <a href="talks/" class="group block no-underline rounded-2xl border border-gray-200 bg-white/90 p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-lg dark:border-gray-700 dark:bg-zinc-900/90">
-        <h2 class="text-xl font-bold text-gray-900 group-hover:text-primary-600 group-hover:underline dark:text-white dark:group-hover:text-primary-400" style="margin-bottom:0.75rem;">
+        <h2 class="text-2xl font-bold text-gray-900 group-hover:text-primary-600 group-hover:underline dark:text-white dark:group-hover:text-primary-400" style="margin-bottom:0.75rem;">
         Talks
         </h2>
         <p class="text-sm text-gray-600 dark:text-gray-400" style="line-height:1.7; margin-bottom:0;">

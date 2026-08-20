@@ -3,6 +3,7 @@
 title = "Talks"
 weight = 1
 summary = "Videos and written notes from Shane's talks."
+layout = "talks"
 +++
 
 Shane had an engaging way of teaching. Friends say his style was clear and heartfelt. He believed that anyone could understand anything if it was explained clearly.
