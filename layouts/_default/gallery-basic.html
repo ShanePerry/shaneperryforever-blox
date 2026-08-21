@@ -142,6 +142,7 @@
     let currentIndex = 0;
     let touchStartX = 0;
     let touchEndX = 0;
+    let multiTouchGesture = false;
 
     function openImage(index) {
       if (!items.length) {
@@ -203,27 +204,54 @@
         }
       });
 
-      lightbox.addEventListener("touchstart", (e) => {
-        touchStartX = e.changedTouches[0].screenX;
-      });
+          lightbox.addEventListener("touchstart", (e) => {
+      if (e.touches.length > 1) {
+        multiTouchGesture = true;
+        return;
+      }
 
-      lightbox.addEventListener("touchend", (e) => {
+      if (!multiTouchGesture) {
+        touchStartX = e.touches[0].screenX;
+      }
+    });
 
-        touchEndX = e.changedTouches[0].screenX;
+    lightbox.addEventListener("touchmove", (e) => {
+      if (e.touches.length > 1) {
+        multiTouchGesture = true;
+      }
+    });
 
-        const diff = touchEndX - touchStartX;
-
-        if (Math.abs(diff) < 50) {
-          return;
+    lightbox.addEventListener("touchend", (e) => {
+      if (multiTouchGesture) {
+        if (e.touches.length === 0) {
+          multiTouchGesture = false;
         }
 
-        if (diff > 0) {
-          prevImage();
-        } else {
-          nextImage();
-        }
+        return;
+      }
 
-      });
+      if (e.changedTouches.length === 0) {
+        return;
+      }
+
+      touchEndX = e.changedTouches[0].screenX;
+
+      const diff = touchEndX - touchStartX;
+
+      if (Math.abs(diff) < 50) {
+        return;
+      }
+
+      if (diff > 0) {
+        prevImage();
+      } else {
+        nextImage();
+      }
+    });
+
+    lightbox.addEventListener("touchcancel", () => {
+      multiTouchGesture = false;
+    });
     }
 
     document.addEventListener("keydown", (e) => {
