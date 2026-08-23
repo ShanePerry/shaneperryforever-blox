@@ -23,6 +23,8 @@
 
       {{ range $img := $images }}
 
+        {{ $thumb := $img.Resize "800x webp q80" }}
+
         {{ $base := replaceRE "\\..+$" "" $img.Name }}
         {{ $dateStr := "" }}
 
@@ -39,7 +41,13 @@
         <figure>
           <a href="#" class="gallery-item" data-image="{{ $img.RelPermalink }}">
             <div class="overflow-hidden rounded-md bg-gray-100 dark:bg-gray-800" style="aspect-ratio: 4 / 3;">
-              <img src="{{ $img.RelPermalink }}" alt="{{ $img.Name }}" class="h-full w-full object-cover" loading="lazy">
+              <img src="{{ $thumb.RelPermalink }}"
+                width="{{ $thumb.Width }}"
+                height="{{ $thumb.Height }}"
+                alt="{{ $img.Name }}"
+                class="h-full w-full object-cover"
+                loading="lazy"
+                decoding="async">
             </div>
           </a>
 
