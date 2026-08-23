@@ -21,22 +21,28 @@
 
     <div class="grid grid-cols-1 gap-x-6 gap-y-9 sm:grid-cols-2 lg:grid-cols-3">
 
-      {{ range $img := $images }}
+    {{ range $img := $images }}
 
-        <figure>
-          <a href="#" class="gallery-item" data-image="{{ $img.RelPermalink }}">
-            <div class="overflow-hidden rounded-md bg-gray-100 dark:bg-gray-800" style="aspect-ratio: 4 / 3;">
-              <img
-                src="{{ $img.RelPermalink }}"
-                alt="{{ $img.Name }}"
-                loading="lazy"
-                decoding="async"
-                class="h-full w-full object-contain bg-black/5 dark:bg-black/20">
-            </div>
-          </a>
-        </figure>
+      {{ $thumb := $img.Resize "800x webp q80" }}
 
-      {{ end }}
+      <figure>
+        <a href="#" class="gallery-item" data-image="{{ $img.RelPermalink }}">
+          <div
+            class="overflow-hidden rounded-md bg-gray-100 dark:bg-gray-800"
+            style="aspect-ratio: 4 / 3;">
+            <img
+              src="{{ $thumb.RelPermalink }}"
+              width="{{ $thumb.Width }}"
+              height="{{ $thumb.Height }}"
+              alt="{{ $img.Name }}"
+              loading="lazy"
+              decoding="async"
+              class="h-full w-full object-contain bg-black/5 dark:bg-black/20">
+          </div>
+        </a>
+      </figure>
+
+    {{ end }}
 
     </div>
 
