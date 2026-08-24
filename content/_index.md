@@ -19,7 +19,7 @@ sections:
                >
           </div>
 
-          <h1 class="text-4xl font-bold text-gray-900 dark:text-white" style="margin-top:2.5rem; margin-bottom:0;">
+          <h1 class="text-4xl font-bold text-gray-900 dark:text-white" style="margin-top:3rem; margin-bottom:0;">
             Shane Perry
           </h1>
 
@@ -30,7 +30,7 @@ sections:
 
     design:
       spacing:
-        padding: ['3rem', '0', '3.5rem', '0']
+        padding: ['3rem', '0', '3.25rem', '0']
 
 
   - block: markdown
@@ -49,8 +49,10 @@ sections:
                class="w-full rounded-md"
                >
           </div>
-          <h2 class="text-3xl font-bold text-gray-900 dark:text-white" style="margin-top:2.5rem; margin-bottom:0.5rem;">
+          <h2 class="text-3xl font-bold text-gray-900 dark:text-white" style="margin-top:3rem; margin-bottom:0.5rem;">
+            <a href=memories/ class="no-underline transition hover:-translate-y-1 hover:shadow-lg">
             Memories
+          </a>
           </h2>
 
           <p class="text-lg text-gray-700 dark:text-gray-300" style="max-width:760px; margin:.75rem auto .75rem auto;">
@@ -64,7 +66,7 @@ sections:
 
     design:
       spacing:
-        padding: ['4rem', '0', '3.5rem', '0']
+        padding: ['4rem', '0', '3rem', '0']
 
   - block: markdown
     content:
@@ -81,8 +83,10 @@ sections:
                class="w-full rounded-md"
                >
           </div>
-          <h2 class="text-3xl font-bold text-gray-900 dark:text-white" style="margin-top:2.5rem; margin-bottom:0.5rem;">
+          <h2 class="text-3xl font-bold text-gray-900 dark:text-white" style="margin-top:3rem; margin-bottom:0.5rem;">
+            <a href=memories/ class="no-underline transition hover:-translate-y-1 hover:shadow-lg">
             Eleven Weeks
+          </a>
           </h2>
 
           <p class="text-lg text-gray-700 dark:text-gray-300" style="max-width:760px; margin:.75rem auto .75rem auto;">
@@ -96,7 +100,7 @@ sections:
 
     design:
       spacing:
-        padding: ['4rem', '0', '3.5rem', '0']
+        padding: ['4rem', '0', '3rem', '0']
 
   - block: markdown
     content:
@@ -113,8 +117,10 @@ sections:
                class="w-full rounded-md"
                >
           </div>
-          <h2 class="text-3xl font-bold text-gray-900 dark:text-white" style="margin-top:2.5rem; margin-bottom:0.5rem;">
+          <h2 class="text-3xl font-bold text-gray-900 dark:text-white" style="margin-top:3rem; margin-bottom:0.5rem;">
+            <a href=memories/ class="no-underline transition hover:-translate-y-1 hover:shadow-lg">
             About Shane
+          </a>
           </h2>
 
           <p class="text-lg text-gray-700 dark:text-gray-300" style="max-width:760px; margin:.75rem auto .75rem auto;">
@@ -128,5 +134,5 @@ sections:
 
     design:
       spacing:
-        padding: ['4rem', '0', '4rem', '0']
+        padding: ['4rem', '0', '2.5rem', '0']
 ---
