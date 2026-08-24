@@ -84,7 +84,7 @@ sections:
                >
           </div>
           <h2 class="text-3xl font-bold text-gray-900 dark:text-white" style="margin-top:3rem; margin-bottom:0.5rem;">
-            <a href=memories/ class="no-underline transition hover:-translate-y-1 hover:shadow-lg">
+            <a href=eleven-weeks/ class="no-underline transition hover:-translate-y-1 hover:shadow-lg">
             Eleven Weeks
           </a>
           </h2>
@@ -118,7 +118,7 @@ sections:
                >
           </div>
           <h2 class="text-3xl font-bold text-gray-900 dark:text-white" style="margin-top:3rem; margin-bottom:0.5rem;">
-            <a href=memories/ class="no-underline transition hover:-translate-y-1 hover:shadow-lg">
+            <a href=about-shane/ class="no-underline transition hover:-translate-y-1 hover:shadow-lg">
             About Shane
           </a>
           </h2>
