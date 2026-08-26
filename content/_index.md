@@ -124,7 +124,7 @@ sections:
           </h2>
 
           <p class="text-lg text-gray-700 dark:text-gray-300" style="max-width:760px; margin:.75rem auto .75rem auto;">
-            Photos, timeline, talks, and the ongoing visits shared in A Short Rest.
+            Photos, talks, and the ongoing visits shared in A Short Rest.
           </p>
 
           <a href=about-shane/ class="no-underline transition hover:-translate-y-1 hover:shadow-lg">

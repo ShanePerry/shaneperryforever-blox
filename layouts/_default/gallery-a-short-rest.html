@@ -23,7 +23,8 @@
 
       {{ range $img := $images }}
 
-        {{ $thumb := $img.Resize "800x webp q80" }}
+        {{ $filters := slice images.AutoOrient (images.Process "resize 800x webp q80") }}
+        {{ $thumb := images.Filter $filters $img }}
 
         {{ $base := replaceRE "\\..+$" "" $img.Name }}
         {{ $dateStr := "" }}
