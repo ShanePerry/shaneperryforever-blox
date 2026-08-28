@@ -56,7 +56,7 @@ sections:
           </h2>
 
           <p class="text-lg text-gray-700 dark:text-gray-300" style="max-width:760px; margin:.75rem auto .75rem auto;">
-            Shared stories, photos, and videos celebrating Shane.
+            Shared stories celebrating Shane.
           </p>
 
           <a href=memories/ class="no-underline transition hover:-translate-y-1 hover:shadow-lg">
@@ -124,7 +124,7 @@ sections:
           </h2>
 
           <p class="text-lg text-gray-700 dark:text-gray-300" style="max-width:760px; margin:.75rem auto .75rem auto;">
-            Photos, talks, and the ongoing visits shared in A Short Rest.
+            Photo gallery, talks, and A Short Rest.
           </p>
 
           <a href=about-shane/ class="no-underline transition hover:-translate-y-1 hover:shadow-lg">

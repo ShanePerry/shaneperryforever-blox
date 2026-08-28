@@ -51,7 +51,7 @@ sections:
         Talks
         </h2>
         <p class="text-sm text-gray-600 dark:text-gray-400" style="line-height:1.7; margin-bottom:0;">
-        Talks, outlines, recordings, or spiritual material connected with Shane’s life and faith.
+        Talks, outlines, recordings connected with Shane’s spiritual life.
         </p>
         </a>
 
@@ -60,7 +60,7 @@ sections:
         A Short Rest
         </h2>
         <p class="text-sm text-gray-600 dark:text-gray-400" style="line-height:1.7; margin-bottom:0;">
-        Monthly visit photos and quiet reminders that Shane is resting for now.
+        Quiet reminders that Shane's faith-filled record is etched in stone.
         </p>
         </a>
 
