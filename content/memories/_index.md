@@ -25,7 +25,7 @@ sections:
           </p>
 
           <a
-            href="https://forms.gle/PAP7FBDvnss3ABRC6" class="no-underline transition hover:-translate-y-1 hover:shadow-lg">
+            href="https://forms.gle/PAP7FBDvnss3ABRC6" class="inline-block rounded-lg border border-gray-200 bg-white/90 px-5 py-3 text-base font-semibold text-gray-800 no-underline shadow-sm transition hover:-translate-x-1 hover:shadow-md dark:border-gray-700 dark:bg-zinc-900/90 dark:text-gray-100">
             Share a Memory of Shane
           </a>
         </div>
