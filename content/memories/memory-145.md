@@ -10,7 +10,7 @@
 # encouragement
 
 # Keep or edit these fields as needed:
-title = "Construction in Guatemala"
+title = "A Gem"
 author = "A. T."
 date = "2026-08-31"        # option to add date like this: (YYYY-MM-DD)
 +++
