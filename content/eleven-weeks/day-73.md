@@ -90,7 +90,6 @@ That gives me relief.
 **Satan couldn’t take him from Jehovah.  
 Shane won.**
 
-His life is far from over.  
 We can start planning the welcome‑back party.
 
 ---
