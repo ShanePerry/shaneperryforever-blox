@@ -12,7 +12,7 @@
 # Keep or edit these fields as needed:
 title = "A Terrible Mighty One"
 author = "Josh Benedict"
-date = "2013-01-01"        # option to add date like this: (YYYY-MM-DD)
+date = "2026-09-08"        # option to add date like this: (YYYY-MM-DD)
 +++
 
 <!-- Type the memory below. Keep the original wording whenever possible. -->
