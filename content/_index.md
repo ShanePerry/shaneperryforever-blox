@@ -56,7 +56,7 @@ sections:
           </h2>
 
           <p class="text-lg text-gray-700 dark:text-gray-300" style="max-width:760px; margin:.75rem auto .75rem auto;">
-            Shared stories celebrating Shane.
+            Shared stories celebrating Shane
           </p>
 
           <a href=memories/ class="no-underline transition hover:-translate-y-1 hover:shadow-lg">
@@ -90,7 +90,7 @@ sections:
           </h2>
 
           <p class="text-lg text-gray-700 dark:text-gray-300" style="max-width:760px; margin:.75rem auto .75rem auto;">
-            A 73-day walk through Shane’s accident, recovery, and final moments.
+            A 73-day walk through Shane’s accident, recovery, and final moments
           </p>
 
           <a href=eleven-weeks/ class="no-underline transition hover:-translate-y-1 hover:shadow-lg">
@@ -124,7 +124,7 @@ sections:
           </h2>
 
           <p class="text-lg text-gray-700 dark:text-gray-300" style="max-width:760px; margin:.75rem auto .75rem auto;">
-            Photo gallery, talks, and A Short Rest.
+            Photo gallery, talks, and A Short Rest
           </p>
 
           <a href=about-shane/ class="no-underline transition hover:-translate-y-1 hover:shadow-lg">
