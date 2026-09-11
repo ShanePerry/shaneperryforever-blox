@@ -10,7 +10,7 @@
 # encouragement
 
 # Keep or edit these fields as needed:
-title = "Genunine Nard"
+title = "Genuine Nard"
 author = "Nessy"
 date = "2023-09-09"        # option to add date like this: (YYYY-MM-DD)
 +++
