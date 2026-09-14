@@ -17,12 +17,15 @@
   {{ $imgs := where .Resources "ResourceType" "image" }}
   {{ $images := sort $imgs "Name" "asc" }}
 
+  {{ $videos := where .Resources "MediaType.MainType" "video" }}
+  {{ $videos = sort $videos "Name" "asc" }}
+
   {{ if gt (len $images) 0 }}
 
     <div class="grid grid-cols-1 gap-x-6 gap-y-9 sm:grid-cols-2 lg:grid-cols-3">
 
     {{ range $img := $images }}
-
+      {{ if not (strings.Contains $img.Name "-poster.") }}
       {{ $filters := slice images.AutoOrient (images.Process "resize 800x webp q80") }}
       {{ $thumb := images.Filter $filters $img }}
 
@@ -42,12 +45,38 @@
           </div>
         </a>
       </figure>
-
+      {{ end }}
     {{ end }}
+    {{ range $video := $videos }}
+      {{ $baseName := strings.TrimSuffix ".mp4" $video.Name }}
+      {{ $posterName := printf "%s-poster.*" $baseName }}
+      {{ $poster := $.Resources.GetMatch $posterName }}
 
-    </div>
+      <figure>
+        <div
+          class="overflow-hidden rounded-md bg-gray-100 dark:bg-gray-800"
+          style="aspect-ratio: 4 / 3;">
+          
+          <video
+            controls
+            playsinline
+            preload="none"
+            class="h-full w-full bg-black object-contain"
+            {{ with $poster }}
+              poster="{{ .RelPermalink }}"  
+            {{ end }}>
 
-  {{ else }}
+            <source
+            src="{{ $video.RelPermalink }}"
+            type="{{ $video.MediaType.Type }}">
+
+            Your browser does not support video playback.
+          </video>
+        </div>
+      </figure>
+  {{ end }}  
+ </div>     
+{{ else }}
 
     <p class="text-lg text-gray-700 dark:text-gray-300">
       <em>No photos yet.</em> Add JPG/PNG images to this gallery folder.
