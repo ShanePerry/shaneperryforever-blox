@@ -8,9 +8,16 @@ series = ["Eleven Weeks"]
 toc = false
 comments = true
 +++
-Our best day yet. 
+Our best day yet. Shane moved to Helen Hayes rehab today. 
 
-Shane moved to Helen Hayes rehab today. They had given the idea that it would be Wednesday, but then at 11:30 they gave us the good news that it was all approved.
+At 9:00am when I arrived, they said the idea was that it would happen Wednesday.
+
+He had been putting his hand on the trach and moving it slowly. The nurse said not to touch it. At one point my back was turned to him while I talked to the nurse. When I looked back, he had pulled the trach tube out and it was sitting on his chest. He was looking at me blinking. I called the nurse. She called two doctors who arrived very quickly. They looked at him, and looked at his O2. It was staying in range. Of course, they wouldnt let the tube stay out, but they said it was a relief to see him breathing with no issue. 
+
+They had me leave the room and replaced the trach tube.
+
+Next thing I knew, at 11:30 they gave us the good news that it was all approved, Shane would move to Helen Hayes that afternoon.
+
 3:00pm the ambulance came.
 
 It was a good trip. Both the paramedics took JW.ORG contact cards. The young woman said she just started reading the Bible in Genesis. And took our contact info.
@@ -43,3 +50,4 @@ A prayer of thanks 🙏
 Empathy 
 *”Your cold” because I was wearing a vest
 *”I'm sorry” because Bro Jadele broke his arm
+

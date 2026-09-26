@@ -10,7 +10,7 @@ comments = true
 +++
 A good day!
 
-Shane stood up from the edge of the bed with PT again. I actually got to see it ☺️ He stood and pivoted to the recliner. He sat for a while, and held the toothbrush and used it himself but wanted to go back to the bed. 
+Shane stood up from the edge of the bed with PT again. I actually got to see it ☺️ He stood and pivoted to the recliner. He sat for a while, and held the toothbrush and used it himself but wanted to go back to the bed. They said he should keep sitting up for a while at least and hour, to prevent bed sores. He wasnt pleased. The chair was small for him, so it wasnt comfortable. They also told him to keep the helmet on, whenever he was out of the bed. He started to unbuckle the strap. They  noticed and put a piece tape over the buckle. When they left he felt the tape and moved his hand along the strap to where it attached to the helmet. He worked on that until he released the strap completely. He pulled the helmet off and looked relieved. The nurse said, "Shane, you need to keep the helmet on." He said "We are leaving." The nurses could see he was uncomfortable so they helped him get back in bed.
 
 Once he was back in the bed, I told him how great it was that he got up and moved over and back, even though he didn't stay in the recliner very long (it's too small for him) He told me “don't worry” 😅
 
