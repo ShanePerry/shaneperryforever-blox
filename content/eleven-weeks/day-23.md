@@ -16,7 +16,7 @@ He had been putting his hand on the trach and moving it slowly. The nurse said n
 
 They had me leave the room and replaced the trach tube.
 
-Next thing I knew, at 11:30 they gave us the good news that it was all approved, Shane would move to Helen Hayes that afternoon.
+At 11:30 they gave us the good news that it was all approved, Shane would move to Helen Hayes that afternoon. 
 
 3:00pm the ambulance came.
 
